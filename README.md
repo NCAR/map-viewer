@@ -8,7 +8,7 @@ To test locally with Docker:
 
 To push containers to DockerHub:
 
-map-viewer> docker compose up --build
+> docker compose up --build # locally
 > docker tag backend <username>/backend:vX
 > docker push <username>/backend:vX
 > docker tag frontend <username>/frontend:vX
