@@ -14,4 +14,3 @@ To push containers to DockerHub:
 > docker tag frontend <username>/frontend:vX
 > docker push <username>/frontend:vX
 
-
