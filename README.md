@@ -8,9 +8,11 @@ To test locally with Docker:
 
 To push containers to DockerHub:
 
+'''
 > docker compose up --build # locally
 > docker tag backend <username>/backend:vX
 > docker push <username>/backend:vX
 > docker tag frontend <username>/frontend:vX
 > docker push <username>/frontend:vX
+'''
 
