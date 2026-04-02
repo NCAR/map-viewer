@@ -1,14 +1,22 @@
 replicaCount: 1
 
-webapp:
-  name: credit-viewer
-  group: credit-viewer
+frontend:
+  name: map-viewer-frontend
+  group: map-viewer
   path: /
   tls:
-    fqdn: credit-viewer.k8s.ucar.edu
-    secretName: incommon-cert-credit-viewer
+    fqdn: map-viewer.k8s.ucar.edu
+    secretName: incommon-cert-map-viewer
   container: 
-    image: docker.io/mattrncar/credit-viewer-backend:v1
+    image: docker.io/mattrncar/map-viewer-frontend:v1
+    port: 80
+    memory: 1G
+    cpu: 2
+backend:
+  name: map-viewer-backend
+  group: map-viewer
+  container: 
+    image: docker.io/mattrncar/map-viewer-backend:v1
     port: 8000
     memory: 1G
     cpu: 2

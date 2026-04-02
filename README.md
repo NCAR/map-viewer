@@ -8,10 +8,10 @@ To test locally with Docker:
 
 To push containers to DockerHub:
 
-credit-viewer> docker compose up --build
-> docker tag credit-viewer-backend <username>/credit-viewer-backend:v1
-> docker push <username>/credit-viewer-backend:v1
-> docker tag credit-viewer-nginx <username>/credit-viewer-nginx:v1
-> docker push <username>/credit-viewer-nginx:v1
+map-viewer> docker compose up --build
+> docker tag backend <username>/backend:vX
+> docker push <username>/backend:vX
+> docker tag frontend <username>/frontend:vX
+> docker push <username>/frontend:vX
 
 
