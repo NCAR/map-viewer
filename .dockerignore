@@ -25,5 +25,5 @@ tmp
 # Development
 image?.png
 test_variable.png
-*.nc
+# *.nc
 

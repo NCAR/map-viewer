@@ -16,7 +16,7 @@ backend:
   name: map-viewer-backend
   group: map-viewer
   container: 
-    image: docker.io/mattrncar/map-viewer-backend:v1
+    image: docker.io/mattrncar/map-viewer-backend:v2
     port: 8000
     memory: 1G
     cpu: 2
