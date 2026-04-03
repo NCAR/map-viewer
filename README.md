@@ -14,9 +14,9 @@ To push containers to DockerHub:
 
 ```console
 > docker compose up --build # locally
-> docker tag backend <username>/backend:vX
-> docker push <username>/backend:vX
-> docker tag frontend <username>/frontend:vX
-> docker push <username>/frontend:vX
+> docker tag map-viewer-backend <username>/map-viewer-backend:vX
+> docker push <username>/map-viewer-backend:vX
+> docker tag map-viewer-frontend <username>/map-viewer-frontend:vX
+> docker push <username>/map-viewer-frontend:vX
 ```
 
