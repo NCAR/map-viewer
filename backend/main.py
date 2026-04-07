@@ -40,7 +40,7 @@ def get_data(variable_name: str):
         try:
             variable_data = get_variable_data(netcdf_data, variable_name)
         except AttributeError:
-            raise HTTPException(status_code=400, detail=f"Variable '{variable_name}' not found in dataset")
+            raise HTTPException(status_code=400, detail=f"Variable '{variable_name}' not found in data")
         data_min, data_max = float(variable_data.min()), float(variable_data.max())
 
     # -- Get lat/lon coordinate arrays, normalise lon to -180→180 --------------
