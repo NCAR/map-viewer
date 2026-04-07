@@ -8,7 +8,7 @@ frontend:
     fqdn: map-viewer.k8s.ucar.edu
     secretName: incommon-cert-map-viewer
   container: 
-    image: docker.io/mattrncar/map-viewer-frontend:v4
+    image: docker.io/mattrncar/map-viewer-frontend:v5
     port: 80
     memory: 1G
     cpu: 2
@@ -16,7 +16,7 @@ backend:
   name: map-viewer-backend
   group: map-viewer
   container: 
-    image: docker.io/mattrncar/map-viewer-backend:v4
+    image: docker.io/mattrncar/map-viewer-backend:v5
     port: 8000
     memory: 1G
     cpu: 2
